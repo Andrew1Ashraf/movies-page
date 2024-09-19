@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: Mulish-Bold;
+    src: url(./font/Mulish/Mulish-Bold.ttf);
+}
+@font-face {
+    font-family: Mulish-Light;
+    src: url(./font/Mulish/Mulish-Light.ttf);
+}
+@font-face {
+    font-family: Mulish-Medium;
+    src: url(./font/Mulish/Mulish-Medium.ttf);
+}
+@font-face {
+    font-family: Mulish-Regular;
+    src: url(./font/Mulish/Mulish-Regular.ttf);
+}
+.body{
+    background-image: url(./img/EG-en-20240909-TRIFECTA-perspective_7f808c3d-9f43-4019-badf-f042e7345ad0_small.jpg);
+    width: 100%;
+}
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.log-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.log-in{
+    border: 1px solid rgba(0,0,0,0.7);
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.7);
+    margin-block: 10rem;
+    height: 20rem;
+}
+.label{
+    display: block;
+    margin: 10px 30px 0px 10px;
+    font-family: Mulish-Medium;
+    font-size: 20px;
+}
+.Email{
+    background-color: #f0f8ffb0;
+    color: rgb(0 0 0 / 63%);
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+}
+.password{
+    background-color: #f0f8ffb0;
+    color: rgb(0 0 0 / 63%);
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+}
+input[type="submit"] {
+    background-color: #d7d7d796;
+    color: #000000;
+    width: 6rem;
+    margin-inline-start: 2.5rem;
+    border: none;
+    border-radius: 11px;
+    margin-top: 15px;
+    padding: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
