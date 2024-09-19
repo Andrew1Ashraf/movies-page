@@ -33,18 +33,3 @@ ball.addEventListener("click", () => {
   });
   ball.classList.toggle("active");
 });
-
-//routing
-
-const loginBtn = document.getElementById('login-btn');
-const signupBtn = document.getElementById('signup-btn');
-
-loginBtn.addEventListener('click',   
-() => {
-    window.location.href = './login.html';
-});
-
-signupBtn.addEventListener('click', () => {
-    window.location.href = 'signup.html';   
-
-});
