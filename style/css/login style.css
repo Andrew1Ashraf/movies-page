@@ -1,84 +1,141 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-@font-face {
-    font-family: Mulish-Bold;
-    src: url(./font/Mulish/Mulish-Bold.ttf);
-}
-@font-face {
-    font-family: Mulish-Light;
-    src: url(./font/Mulish/Mulish-Light.ttf);
-}
-@font-face {
-    font-family: Mulish-Medium;
-    src: url(./font/Mulish/Mulish-Medium.ttf);
-}
-@font-face {
-    font-family: Mulish-Regular;
-    src: url(./font/Mulish/Mulish-Regular.ttf);
-}
-.body{
-    background-image: url(./img/EG-en-20240909-TRIFECTA-perspective_7f808c3d-9f43-4019-badf-f042e7345ad0_small.jpg);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background {
+    position: relative;
     width: 100%;
-}
-.container {
-    max-width: 360px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
+    height: 100%;
+    background: url(../../img/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg) no-repeat center center/cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-container {
+    z-index: 1;
+    width:25%;
+    padding: 60px 40px;
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-inline: auto;
+    margin-top: 120px;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-Top: 32px;
+    margin-left: 32px;
+    color: #4dbf00;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input::placeholder {
+    color: #bbb;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    padding: 10px;
+    background:#4dbf00;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  
+  .signup 
+  {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+h4,h6
+{
+    text-align: center;
+    font-size: 15px;
 }
-.log-in{
+.login-options
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.log-in{
-    border: 1px solid rgba(0,0,0,0.7);
-    border-radius: 4px;
-    background-color: rgba(0,0,0,0.7);
-    margin-block: 10rem;
-    height: 20rem;
-}
-.label{
-    display: block;
-    margin: 10px 30px 0px 10px;
-    font-family: Mulish-Medium;
-    font-size: 20px;
-}
-.Email{
-    background-color: #f0f8ffb0;
-    color: rgb(0 0 0 / 63%);
-    border: 1px solid;
-    border-radius: 4px;
-    margin: 5px 0px 5px;
-    display: flex;
-    flex-direction: column;
-}
-.password{
-    background-color: #f0f8ffb0;
-    color: rgb(0 0 0 / 63%);
-    border: 1px solid;
-    border-radius: 4px;
-    margin: 5px 0px 5px;
-    display: flex;
-    flex-direction: column;
-}
-input[type="submit"] {
-    background-color: #d7d7d796;
-    color: #000000;
-    width: 6rem;
-    margin-inline-start: 2.5rem;
-    border: none;
-    border-radius: 11px;
     margin-top: 15px;
-    padding: 3px;
-    cursor: pointer;
+    gap: 20px;
 }
-input[type="submit"]:hover {
-    background-color: black;
-    color: white;
+.login-options-text
+{
+  border-bottom: 1px solid white;
+  width: 100%;
+
+}
+.login-options-icons
+{
+  margin-bottom: 15px;
+}
+
+.invalid
+{
+    color: red;
+    font-size: 15px;
+    display: none;
 }
